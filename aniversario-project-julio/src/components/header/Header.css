@@ -1,0 +1,55 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #8b00ff;
+    letter-spacing: 4px;
+    text-shadow:
+        0 0 10px #8b00ff,
+        0 0 20px #8b00ff;
+}
+
+.header nav {
+    display: flex;
+    gap: 25px;
+}
+
+.header nav a {
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    position: relative;
+}
+
+.header nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #00d9ff;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.header nav a:hover::after {
+    width: 100%;
+}
+
+.header nav a:hover {
+    color: #00d9ff;
+    text-shadow: 0 0 10px #00d9ff;
+}

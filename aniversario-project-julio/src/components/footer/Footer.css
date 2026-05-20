@@ -1,0 +1,18 @@
+.footer {
+  width: 100%;
+  padding: 30px;
+  background: #050505;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  text-align: center;
+}
+
+.footer p {
+  color: #8b00ff;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 3px;
+  font-size: 1.3rem;
+
+  text-shadow:
+    0 0 10px #8b00ff,
+    0 0 20px #8b00ff;
+}
