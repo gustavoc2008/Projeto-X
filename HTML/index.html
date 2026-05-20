@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ANIVERSÁRIO DO JULIO</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+    <canvas id="bg"></canvas>
+
+    <header>
+        <h1 class="glow">ANIVERSÁRIO DO JULIO</h1>
+
+        <p class="subtitle">
+            A festa mais caótica do ano.
+            Luzes, música, desafios insanos e vibe estilo Projeto X.
+        </p>
+
+        <div class="countdown">
+
+            <div class="box">
+                <h2 id="days">00</h2>
+                <p>Dias</p>
+            </div>
+
+            <div class="box">
+                <h2 id="hours">00</h2>
+                <p>Horas</p>
+            </div>
+
+            <div class="box">
+                <h2 id="minutes">00</h2>
+                <p>Minutos</p>
+            </div>
+
+            <div class="box">
+                <h2 id="seconds">00</h2>
+                <p>Segundos</p>
+            </div>
+
+        </div>
+    </header>
+
+    <section>
+
+        <h2 class="title">O QUE VAI TER?</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🎧 DJ INSANO</h3>
+                <p>Música até amanhecer.</p>
+            </div>
+
+            <div class="card">
+                <h3>🌌 ÁREA NEON</h3>
+                <p>Luzes, fumaça e lasers.</p>
+            </div>
+
+            <div class="card">
+                <h3>🎮 DESAFIOS</h3>
+                <p>Minigames e desafios secretos.</p>
+            </div>
+
+            <div class="card">
+                <h3>📸 REDE SOCIAL</h3>
+                <p>Poste tudo que acontecer na festa.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2 class="title">REDE SOCIAL DA FESTA</h2>
+
+        <textarea id="text" placeholder="Conta o que aconteceu..."></textarea>
+
+        <button onclick="postar()">
+            POSTAR
+        </button>
+
+        <div class="feed" id="feed"></div>
+
+    </section>
+
+    <div class="music">
+        <button onclick="trocarModo()">
+            MODO BALACOBACO
+        </button>
+    </div>
+
+    <script src="../JS/index.js"></script>
+
+</body>
+
+</html>
