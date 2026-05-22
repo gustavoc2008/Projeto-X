@@ -1,0 +1,63 @@
+{
+  "convidados": [
+    {
+      "nome": "Gustavo",
+      "idade": "17",
+      "instagram": "@gustavo",
+      "id": "RyL5idgITG4"
+    }
+  ],
+  "mensagens": [
+    {
+      "id": "1",
+      "nome": "Maria",
+      "mensagem": "Parabéns, Julio! Que sua festa seja incrível!"
+    }
+  ],
+  "musicas": [
+    {
+      "id": "1",
+      "titulo": "Festa do Julio",
+      "artista": "DJ Aniversário"
+    }
+  ],
+  "vip": [
+    {
+      "id": "1",
+      "nome": "Ana",
+      "idade": "20",
+      "instagram": "@ana"
+    }
+  ],
+  "posts": [
+    {
+      "nome": "Gustavo",
+      "mensagem": "JULIO MASTER",
+      "foto": "blob:http://localhost:5173/1f579167-d820-4699-bfe9-7c98394ce8ed",
+      "curtidas": 1,
+      "curtidoPor": [
+        "Gustavo"
+      ],
+      "id": "uU5EUYtFtfs"
+    },
+    {
+      "nome": "Gustavo",
+      "mensagem": "Julio pensa, logo farma AURA",
+      "foto": "blob:http://localhost:5173/805c663b-ea56-4ae5-bb0f-353051ece004",
+      "curtidas": 1,
+      "curtidoPor": [
+        "Gustavo"
+      ],
+      "id": "MYGHo6_ZsYs"
+    },
+    {
+      "nome": "Gustavo",
+      "mensagem": "sla",
+      "foto": "blob:http://localhost:5173/e45a987f-4fe8-45af-afd9-6017936e19c2",
+      "curtidas": 0,
+      "curtidoPor": [],
+      "id": "6fJaEWSoBM4"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

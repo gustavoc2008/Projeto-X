@@ -7,21 +7,86 @@ import Playlist from "../pages/playlist/Playlist"
 import Gallery from "../pages/gallery/Gallery"
 import Rules from "../pages/rules/Rules"
 import RSVP from "../pages/rsvp/RSVP"
+import Login from "../pages/login/Login"
 import NotFound from "../pages/notFound/NotFound"
+import Convidados from "../pages/convidados/Convidados"
+import Mensagens from "../pages/mensagens/Mensagens"
+
+import PrivateRoute from "./PrivateRoutes"
 
 function AppRoutes() {
+
   return (
     <BrowserRouter>
+
       <Routes>
+
         <Route path="/" element={<Home />} />
-        <Route path="/sobre" element={<About />} />
+
+        <Route
+          path="/sobre"
+          element={
+            <PrivateRoute>
+              <About />
+            </PrivateRoute>
+          }
+        />
+
+        <Route
+          path="/convidados"
+          element={
+            <PrivateRoute>
+              <Convidados />
+            </PrivateRoute>
+          }
+        />
+
+        <Route
+          path="/playlist"
+          element={
+            <PrivateRoute>
+              <Playlist />
+            </PrivateRoute>
+          }
+        />
+
+        <Route
+          path="/galeria"
+          element={
+            <PrivateRoute>
+              <Gallery />
+            </PrivateRoute>
+          }
+        />
+
+        <Route
+          path="/regras"
+          element={
+            <PrivateRoute>
+              <Rules />
+            </PrivateRoute>
+          }
+        />
+
+        <Route
+          path="/mensagens"
+          element={
+            <PrivateRoute>
+              <Mensagens />
+            </PrivateRoute>
+          }
+        />
+
         <Route path="/countdown" element={<Countdown />} />
-        <Route path="/playlist" element={<Playlist />} />
-        <Route path="/galeria" element={<Gallery />} />
-        <Route path="/regras" element={<Rules />} />
+
         <Route path="/rsvp" element={<RSVP />} />
+
+        <Route path="/login" element={<Login />} />
+
         <Route path="*" element={<NotFound />} />
+
       </Routes>
+
     </BrowserRouter>
   )
 }

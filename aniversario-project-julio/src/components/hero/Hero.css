@@ -65,7 +65,9 @@
   box-shadow:
     0 0 20px #ff003c,
     0 0 40px #8b00ff;
+  
 }
+
 
 .overlay button:hover {
   transform: scale(1.1);
@@ -108,4 +110,101 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+.user-box{
+    position: absolute;
+
+    top: 20px;
+    left: 20px;
+
+    background: rgba(0,0,0,0.6);
+
+    padding: 12px 20px;
+
+    border-radius: 12px;
+
+    color: white;
+
+    font-weight: bold;
+
+    border: 1px solid #ff00cc;
+
+    box-shadow: 0 0 15px #ff00cc;
+
+    z-index: 10;
+}
+
+.buttons-area{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.logout-btn{
+    background: transparent;
+    border: 2px solid #ff00cc;
+    color: white;
+}
+
+.logout-btn:hover{
+    background: #ff00cc;
+}
+
+.user-box{
+    position: absolute;
+
+    top: 20px;
+    left: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 10px 18px;
+
+    background: rgba(0,0,0,0.65);
+
+    border: 1px solid #ff00cc;
+
+    border-radius: 50px;
+
+    box-shadow: 0 0 15px #ff00cc;
+
+    backdrop-filter: blur(10px);
+
+    z-index: 10;
+}
+
+.user-box span{
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 1rem;
+}
+
+.profile-avatar{
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #ff006a, #8b00ff);
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 1.2rem;
+
+    box-shadow: 
+        0 0 10px #ff00cc,
+        0 0 20px #8b00ff;
 }

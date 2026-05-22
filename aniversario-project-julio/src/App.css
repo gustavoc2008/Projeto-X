@@ -149,6 +149,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin: 0 auto;
 }
 
 .rsvp-form input {
@@ -244,4 +245,132 @@ a {
   .rsvp-form {
     width: 100%;
   }
+}
+
+/* CONVIDADOS */
+
+.convidados-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.convidado-card {
+    width: 250px;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(12px);
+
+    transition: 0.3s;
+}
+
+.convidado-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 0 25px #8b00ff;
+}
+
+.convidado-avatar {
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    font-size: 2rem;
+    font-weight: bold;
+
+    background: linear-gradient(
+        45deg,
+        #ff006a,
+        #8b00ff
+    );
+}
+
+/* PLAYLIST */
+
+.playlist-form-area {
+    margin-bottom: 50px;
+}
+
+.playlist-form {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.playlist-form input {
+    flex: 1;
+
+    padding: 18px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.05);
+
+    color: white;
+
+    border: 1px solid #8b00ff;
+}
+
+.playlist-form button {
+    padding: 18px 30px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        45deg,
+        #ff006a,
+        #8b00ff
+    );
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.playlist-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.playlist-card {
+    width: 300px;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: 0.3s;
+}
+
+.playlist-card:hover {
+    transform: scale(1.03);
+
+    box-shadow:
+        0 0 20px #00d9ff;
 }
